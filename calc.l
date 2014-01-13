@@ -11,9 +11,9 @@ void yyerror(char *);
 	}
 [+]	return plus;
 [*]	return mul;
-[\n]	return space;
+[\n]	return whitesp;
 [\(]	return lt_brak;
-[\)]	return rt_brak;
+[\)]	return rt;
 [ \t] ; /* skip whitespace */
 . 	yyerror("invalid character");
 
